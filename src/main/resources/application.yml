@@ -1,0 +1,16 @@
+server:
+  port: 9071
+spring:
+  datasource:
+    username: admin
+    password: psw
+    url: jdbc:postgresql://localhost:9002/university-ms
+    driverClassName: org.postgresql.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgresPlusDialect
+        ddl-auto: validate
+        format_sql: true
+  liquibase:
+    change-log: classpath:db.changelog/changelog-university.yml

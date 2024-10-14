@@ -1,0 +1,34 @@
+databaseChangeLog:
+  - changeSet:
+      id: create_lector_table
+      author: aleksandrPob
+      changes:
+        - createTable:
+            tableName: LECTOR
+            columns:
+              - column:
+                  name: ID
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: PK_LECTOR
+              - column:
+                  name: DEGREE
+                  type: VARCHAR(75)
+                  constraints:
+                    unique: false
+                    nullable: false
+              - column:
+                  name: FULL_NAME
+                  type: VARCHAR
+                  constraints:
+                    unique: false
+                    nullable: false
+              - column:
+                  name: SALARY
+                  type: NUMERIC
+                  constraints:
+                    unique: false
+                    nullable: false

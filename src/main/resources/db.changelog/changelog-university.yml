@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include:
+      file: db.changelog/changeset/create-lector.yml
+  - include:
+      file: db.changelog/changeset/create-department.yml
+  - include:
+      file: db.changelog/changeset/create-lector-department.yml
