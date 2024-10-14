@@ -20,7 +20,7 @@ public class Department {
     private String name;
 
     @OneToOne
-    @JoinColumn(name = "DEPARTMENT_ID")
+    @JoinColumn(name = "HEAD_ID")
     private Lector head;
 
     @ManyToMany(mappedBy = "departments")

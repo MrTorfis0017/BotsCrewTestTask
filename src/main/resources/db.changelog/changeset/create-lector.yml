@@ -32,3 +32,41 @@ databaseChangeLog:
                   constraints:
                     unique: false
                     nullable: false
+  - changeSet:
+      id: add_lector_1
+      author: aleksandrPob
+      changes:
+        - insert:
+            tableName: LECTOR
+            columns:
+              - column:
+                  name: ID
+                  value: 1
+              - column:
+                  name: DEGREE
+                  value: "PROFESSOR"
+              - column:
+                  name: FULL_NAME
+                  value: "Pobizinskyi Aleksandr"
+              - column:
+                  name: SALARY
+                  value: 100000
+  - changeSet:
+      id: add_lector_2
+      author: aleksandrPob
+      changes:
+        - insert:
+            tableName: LECTOR
+            columns:
+              - column:
+                  name: ID
+                  value: 2
+              - column:
+                  name: DEGREE
+                  value: "PROFESSOR"
+              - column:
+                  name: FULL_NAME
+                  value: "Kostiuk Mykyta"
+              - column:
+                  name: SALARY
+                  value: 50000
