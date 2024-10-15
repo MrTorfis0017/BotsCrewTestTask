@@ -70,3 +70,60 @@ databaseChangeLog:
               - column:
                   name: SALARY
                   value: 50000
+  - changeSet:
+      id: add_lector_3
+      author: aleksandrPob
+      changes:
+        - insert:
+            tableName: LECTOR
+            columns:
+              - column:
+                  name: ID
+                  value: 3
+              - column:
+                  name: DEGREE
+                  value: "ASSISTANT"
+              - column:
+                  name: FULL_NAME
+                  value: "Knysh Vladyslav"
+              - column:
+                  name: SALARY
+                  value: 40000
+  - changeSet:
+      id: add_lector_4
+      author: aleksandrPob
+      changes:
+        - insert:
+            tableName: LECTOR
+            columns:
+              - column:
+                  name: ID
+                  value: 4
+              - column:
+                  name: DEGREE
+                  value: "ASSOCIATE_PROFESSOR"
+              - column:
+                  name: FULL_NAME
+                  value: "Serhienko Anton"
+              - column:
+                  name: SALARY
+                  value: 80000
+  - changeSet:
+      id: add_lector_5
+      author: aleksandrPob
+      changes:
+        - insert:
+            tableName: LECTOR
+            columns:
+              - column:
+                  name: ID
+                  value: 5
+              - column:
+                  name: DEGREE
+                  value: "ASSOCIATE_PROFESSOR"
+              - column:
+                  name: FULL_NAME
+                  value: "Vladyslav Talakh"
+              - column:
+                  name: SALARY
+                  value: 123456

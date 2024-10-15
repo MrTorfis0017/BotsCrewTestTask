@@ -95,3 +95,35 @@ databaseChangeLog:
               - column:
                   name: LECTOR_ID
                   value: 2
+  - changeSet:
+      id: add_lector_department_5
+      author: aleksandrPob
+      changes:
+        - insert:
+            tableName: LECTOR_DEPARTMENT
+            columns:
+              - column:
+                  name: ID
+                  value: 5
+              - column:
+                  name: DEPARTMENT_ID
+                  value: 1
+              - column:
+                  name: LECTOR_ID
+                  value: 3
+  - changeSet:
+      id: add_lector_department_6
+      author: aleksandrPob
+      changes:
+        - insert:
+            tableName: LECTOR_DEPARTMENT
+            columns:
+              - column:
+                  name: ID
+                  value: 6
+              - column:
+                  name: DEPARTMENT_ID
+                  value: 1
+              - column:
+                  name: LECTOR_ID
+                  value: 5
