@@ -127,3 +127,19 @@ databaseChangeLog:
               - column:
                   name: LECTOR_ID
                   value: 5
+  - changeSet:
+      id: add_lector_department_7
+      author: aleksandrPob
+      changes:
+        - insert:
+            tableName: LECTOR_DEPARTMENT
+            columns:
+              - column:
+                  name: ID
+                  value: 7
+              - column:
+                  name: DEPARTMENT_ID
+                  value: 1
+              - column:
+                  name: LECTOR_ID
+                  value: 4
