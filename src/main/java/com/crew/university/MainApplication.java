@@ -32,7 +32,7 @@ public class MainApplication implements CommandLineRunner {
             System.out.println("6. Exit");
             String input = scanner.nextLine();
 
-            switch (input) {
+            switch (input.trim()) {
                 case "1":
                     System.out.println("Please enter the department name:");
                     String departmentNameForHead = scanner.nextLine();
