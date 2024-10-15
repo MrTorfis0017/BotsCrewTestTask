@@ -36,31 +36,31 @@ public class MainApplication implements CommandLineRunner {
                 case "1":
                     System.out.println("Please enter the department name:");
                     String departmentNameForHead = scanner.nextLine();
-                    System.out.println(departmentService.getHeadByName(departmentNameForHead));
+                    System.out.println(departmentService.getHeadByName(departmentNameForHead.trim()));
                     break;
 
                 case "2":
                     System.out.println("Please enter the department name:");
                     String departmentNameForStats = scanner.nextLine();
-                    System.out.println(departmentService.getStatistics(departmentNameForStats));
+                    System.out.println(departmentService.getStatistics(departmentNameForStats.trim()));
                     break;
 
                 case "3":
                     System.out.println("Please enter the department name:");
                     String departmentNameForSalary = scanner.nextLine();
-                    System.out.println(departmentService.getAverageSalary(departmentNameForSalary));
+                    System.out.println(departmentService.getAverageSalary(departmentNameForSalary.trim()));
                     break;
 
                 case "4":
                     System.out.println("Please enter the department name:");
                     String departmentNameForEmployeeCount = scanner.nextLine();
-                    System.out.println(departmentService.getCountOfEmployeeForDepartment(departmentNameForEmployeeCount));
+                    System.out.println(departmentService.getCountOfEmployeeForDepartment(departmentNameForEmployeeCount.trim()));
                     break;
 
                 case "5":
                     System.out.println("Please enter the search template:");
                     String searchTemplate = scanner.nextLine();
-                    System.out.println(departmentService.globalSearch(searchTemplate));
+                    System.out.println(departmentService.globalSearch(searchTemplate.trim()));
                     break;
 
                 case "6":
