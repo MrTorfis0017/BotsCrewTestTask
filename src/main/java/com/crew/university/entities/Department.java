@@ -25,5 +25,4 @@ public class Department {
 
     @ManyToMany(mappedBy = "departments")
     private List<Lector> lectors;
-
 }
