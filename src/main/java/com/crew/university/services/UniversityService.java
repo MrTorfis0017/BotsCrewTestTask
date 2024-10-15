@@ -22,7 +22,6 @@ public class UniversityService {
 
     private final LectorRepository lectorRepository;
 
-
     public StringBuilder getHeadByName(String departmentName) {
         try {
             return new StringBuilder().append("Answer: Head of: ").append(departmentName).append(" department is ").append(departmentRepository.getByName(departmentName).getHead().getFullName());

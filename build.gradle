@@ -37,7 +37,6 @@ dependencies {
 	compileOnly 'org.projectlombok:lombok'
     testImplementation 'com.h2database:h2:2.3.232'
     implementation 'org.springframework.boot:spring-boot-starter-security:3.3.4'
-    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
     implementation 'org.springframework.boot:spring-boot-starter-web:3.2.4'
     implementation group: 'org.springdoc', name: 'springdoc-openapi-starter-webmvc-ui', version: '2.5.0'
 }
